@@ -5,7 +5,7 @@ document.addEventListener(
     (clickEvent) => {
         const itemClicked = clickEvent.target
         if (itemClicked.id.startsWith("walker")) {
-            const [,walkerId] = itemClicked.id.split("--")
+            const [, walkerId] = itemClicked.id.split("--")
 
             for (const walker of walkers) {
                 if (walker.id === parseInt(walkerId)) {
